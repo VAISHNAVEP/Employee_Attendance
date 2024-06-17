@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const UserRoutes = require("./Routers/UserRoutes");
+const serverless = require("serverless-http");
 require("dotenv").config();
 
 const app = express();
@@ -33,4 +34,3 @@ mongoose
 app.listen(PORT, () => {
   console.log(`Server running successfully`);
 });
-
